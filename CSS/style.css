@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'brandFont';
+    src: url("/fonts/static/roboto/RobotoSlab-Bold.ttf");
+
+    font-family: 'brandFontLight';
+    src: url("/fonts/static/roboto/RobotoSlab-Light.ttf");
+
+    font-family: 'bodyText';
+    src: url("/fonts/nonito/static/Nunito-Medium.ttf");
+}
+
+body{
+    background-color: black;
+}
+.containerMain{
+    background-image: url('C:/Users/user/Downloads/MisModificaciones/img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.79); 
+  }
+}
+.containerMain2{
+    padding-top: 20px;
+    background-image: url('C:/Users/user/Downloads/MisModificaciones/img/background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; 
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.79); 
+  }
+    
+}
+nav{
+    background-color: transparent;
+    
+}
+.textItem{
+    padding-top:60px ;
+}
+.brandName{
+    font-family: 'brandFont';
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.underBrandName{
+    font-family: 'brandFontLight';
+    color: rgb(255, 255, 255);
+    
+}
+a >strong{
+    color: white;
+    font-family: "bodyText";
+    font-size: 30px;
+}
+
+
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.custom-navbar ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+.custom-navbar li {
+    list-style: none;
+    margin: 0;
+}
+@media (max-width: 991px) {
+    .navbarContainer{
+        display: flex;
+        justify-content: right;
+    }
+  }
+
+
+.carruselRow{
+    padding-bottom: 30px;
+}
+.carruselBody{
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#myCarouselIndicators > button{
+    width: 50px;
+    height: 13px;
+    background-color: #c39f74;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.containerCards{
+    padding-top: 20px;
+    background-color: #17281375;
+}
+.card{
+    background-color: #e8dbcf;
+    color: #483732;
+    font-family: "bodyText";
+    min-height: 510px;
+}
+
+.recetasContainer{
+    padding-top: 20px;
+    background-color: #e8dbcf;
+}
+.accordion-button{
+    background-color: #c9a377;
+    color: #473732;
+}
+
+#brand{
+    position: relative;
+    left: 40px;
+}
