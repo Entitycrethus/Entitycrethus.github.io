@@ -154,8 +154,15 @@ footer
     color: white;
     
 }
-.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed) 
+{
     background-color: #34b497;
     color: white;
     
+}
+
+.imgReceta
+{
+    min-width: 100%;
+    max-height: 900px;
 }
