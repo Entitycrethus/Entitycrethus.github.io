@@ -6,48 +6,23 @@
     src: url("/fonts/static/roboto/RobotoSlab-Light.ttf");
 
     font-family: 'bodyText';
-    src: url("/fonts/nonito/static/Nunito-Medium.ttf");
+    src: url("/fonts/nonito/static/Nunito-SemiBold.ttf");
 }
 
-body{
-    background-color: black;
+body
+{
+    overflow-x: hidden;
 }
 .containerMain{
-    background-image: url('C:/Users/user/Downloads/MisModificaciones/img/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative; 
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.79); 
-  }
+background-color: #135A4A;   
 }
-.containerMain2{
-    padding-top: 20px;
-    background-image: url('C:/Users/user/Downloads/MisModificaciones/img/background2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative; 
-
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.79); 
-  }
-    
+#brand
+{
+    position: relative;
+    left: 40px;
 }
+
+
 nav{
     background-color: transparent;
     
@@ -66,9 +41,15 @@ nav{
     
 }
 a >strong{
-    color: white;
-    font-family: "bodyText";
+    color:  white;
+    font-family: 'bodyText';
     font-size: 30px;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,  
+    -1px 1px 0 #000,  
+    1px 1px 0 #000; 
+         
 }
 
 
@@ -109,32 +90,72 @@ a >strong{
 #myCarouselIndicators > button{
     width: 50px;
     height: 13px;
-    background-color: #c39f74;
+    background-color: #e6cbb0;
     border-radius: 10px;
     overflow: hidden;
+    border: #000;
 }
 
 .containerCards{
     padding-top: 20px;
-    background-color: #17281375;
+    background-color: #e6cbb0;
 }
 .card{
-    background-color: #e8dbcf;
-    color: #483732;
+    background-color: #34b497;
+    color: white;
     font-family: "bodyText";
     min-height: 510px;
+    border: none;
+    box-shadow: 0px 0px 5px #222;
 }
 
+
+.containerMain2{
+    background-color: #135a4a;
+    
+}
 .recetasContainer{
     padding-top: 20px;
-    background-color: #e8dbcf;
+    padding-bottom: 20px;
+    background-color: #e6cbb0;
+
 }
-.accordion-button{
-    background-color: #c9a377;
-    color: #473732;
+.rowTitle
+{
+    display: flex;
+    text-align: center;
+    
 }
 
-#brand{
-    position: relative;
-    left: 40px;
+
+
+footer
+{
+    margin: 0;
+}
+.titleOnBeige
+{
+    font-family: 'brandFont';
+    color: #135a4a;
+    font-size: 40px;
+    text-decoration: underline overline;
+    margin-bottom: 10px;
+}
+.titleOnGreen
+{
+    font-family: 'brandFont';
+    color: white;
+    font-size: 40px;
+    text-decoration: underline overline;
+}
+.accordion-button
+{       
+    background-color: #135A4A;
+    color: white;
+    
+}
+.accordion-button:not(.collapsed) {
+    background-color: #34b497;
+    color: white;
+    
 }
