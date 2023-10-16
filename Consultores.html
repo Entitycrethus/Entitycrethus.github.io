@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHERPA</title>
+    <!-- Agregar la referencia a Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/lab4.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+        /* Estilos personalizados para los cards */
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* Ajustar el tamaño de las imágenes de los cards */
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="bg-dark bg-gradient">
+    <!-- Barra de navegación -->
+    <nav >
+        <div class="container" >
+            <img src="img/imagen baner.png" class="img-fluid " alt="..." style="display: block; margin-left: auto; margin-right: auto;">
+        </div>
+    </nav>
+
+    <!-- Breadcrumb para indicar la ubicación en el sitio -->
+    <nav aria-label="breadcrumb" style="display: flex; justify-content: center;">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active text-light" id="current-page" aria-current="page"> Consultores</li>
+            <li class="breadcrumb-item text-light"><a href="curriculos.html">CURRÍCULO</a></li>
+            <li class="breadcrumb-item text-light"><a href="Detalles.html">DETALLES</a></li>
+            <li class="breadcrumb-item text-light"><a href="Cotizar.html">COTIZAR</a></li>
+            
+        </ol>
+    </nav>    
+
+    <div class="container mt-4">
+        <!-- Cards para mostrar expertos consultores -->
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-12" id="C1">
+
+                <div class="card custom-card">
+                    <img src="img/consultora 1.jpg" class="img-fluid " alt="...">
+                    <div class="card-body bg-success">
+                        <h5 class="card-title"><i class="bi bi-person-circle"></i> Cristhina Palomino Sanchez</h5>
+                        <p class="text-center">Experto en seguridad cibernética</p>
+                        <div style="text-align:center;">
+                            <a href="curriculos.html" class="btn btn-secondary">CURRÍCULO</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12" id="C2">
+                <div class="card custom-card">
+                    <img src="img/consultora 2.jpg" class="img-fluid" alt="...">
+                    <div class="card-body bg-success">
+                        <h5 class="card-title"><i class="bi bi-person-circle"></i> Paulo Humberto Solis</h5>
+                        <p class="text-center">Desarrollo de software a medida</p>
+                        <div style="text-align:center;">
+                            <a href="curriculos.html" class="btn btn-secondary">CURRÍCULO</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12" id="C3">
+                <div class="card custom-card">
+                    <img src="img/consultora 3.jpg" class="img-fluid" alt="...">
+                    <div class="card-body bg-success">
+                        <h5 class="card-title"><i class="bi bi-person-circle"></i> Ramón Flores Cortez</h5>
+                        <p class="text-center">Gestión de redes y servidores</p>
+                        <div style="text-align:center;">
+                            <a href="curriculos.html" class="btn btn-secondary">CURRÍCULO</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- Tabla para mostrar tipos de consultorías -->
+        <table class="table mt-4 ">
+            <thead>
+                <tr>
+                    <th>Tipo de Consultoría</th>
+                    <th>Descripción</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr>
+                    <td>Consultoría en Seguridad Informática</td>
+                    <td>Aliado para navegar por el complejo panorama de la ciberseguridad</td>
+                    <td>
+                        <a href="Detalles.html" class="btn btn-primary">Más Detalles</a>
+                        <a href="Cotizar.html" class="btn btn-success">Cotizar</a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Consultoria en software a medida</td>
+                    <td>socio para soluciones de software que se ajustan como un guante a sus necesidades</td>
+                    <td>
+                        <a href="Detalles.html" class="btn btn-primary">Más Detalles</a>
+                        <a href="Cotizar.html" class="btn btn-success">Cotizar</a>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td>Consultoría en redes y servidores</td>
+                    <td> ayuda a diseñar, implementar y gestionar su infraestructura tecnológica, asegurando que sea
+                        segura, eficiente y capaz de soportar sus operaciones comerciales.</td>
+                    <td>
+                        <a href="Detalles.html" class="btn btn-primary">Más Detalles</a>
+                        <a href="Cotizar.html" class="btn btn-success">Cotizar</a>
+                    </td>
+                </tr>
+
+                <!-- Agregar más filas según sea necesario -->
+            </tbody>
+        </table>
+
+    </div>
+
+    <!-- Agregar la referencia a Bootstrap JS (jQuery y Popper.js) y Bootstrap JS al final del archivo HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

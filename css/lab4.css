@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 15px;
+    padding: 15px;
+}
+
+.card {
+    border-radius: 15px !important;
+    border: 15px solid var(--color-bg-success) !important;
+}
+
+.table {
+    border-radius: 5px !important;
+    border: 15px solid #00FF00 !important; /* Color verde (puedes ajustar el color si es necesario) */
+}
+
+#current-page {
+    color: #fff; /* Cambia el color del texto */
+    font-weight: red; /* Puedes hacer que el texto sea negrita */
+}
+
+
